@@ -1,0 +1,91 @@
+.post_type{
+    padding: 5%;
+    width: 90%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.post_type button{
+    width: 40%;
+    height: 50px;
+    padding: 10px;
+    font-size: 1em;
+}
+.post_type .active{
+    border: 1px solid #19B3D3;
+    background-color: #19B3D3;
+    color: white;
+}
+.post_input_image input{
+    display: none;
+}
+.post_input_image button{
+    width: 150px;
+    height: 50px;   
+    margin: 20px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.post{
+    width: 80%;
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image{
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+}
+.post_input_image textarea{
+    padding: 20px;
+    margin: 10px;
+    width: 50%;
+    display: none;
+}
+.post_input_text{
+    width: 70%;
+    display: none;
+    justify-content: center;
+    align-content: center;  
+    flex-direction: column;
+}
+.post_input_text textarea{
+    padding: 20px;
+}
+.post_button{
+    width: 150px;
+    height: 50px;
+    margin: 30px;
+    margin-left: 35%;
+    padding: 20px;
+    padding-top: 15px;
+    border: 1px solid #0d6efd;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+.post_button:hover{
+    background-color: #198754;
+}
+
+@media screen and (max-width: 400px){
+    .post_input_image button{
+        margin-bottom: 0px;
+    }
+    .post_input_image textarea{
+        width: 100%;
+        margin: 0px;
+    }
+    .post_input_text{
+        margin-top: 30px;
+    }
+    .post_button{
+        margin-left: 20%;
+    }
+}

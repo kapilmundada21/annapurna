@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+        <label for="check">
+            <i class="fas fa-bars" id="sidebar_btn"></i>
+        </label>
+        <div class="right_area">
+            <a href="#" class="logout_btn" onclick="logout()">Logout</a>
+        </div>
+    </header>
+    <!--header area end-->
+    <!--mobile navigation bar start-->
+    <div class="mobile_nav">
+        <div class="nav_bar">
+            <img src="1.png" class="mobile_profile_image" alt="">
+            <i class="fa fa-bars nav_btn"></i>
+        </div>
+        <div class="mobile_nav_items" id="btn_script2">
+            <a href="home.html" class="btn active" target="content">
+                <i class="fas fa-desktop active"></i><span>Home</span>
+            </a>
+            <a href="post.html" class="btn" target="content">
+                <i class="fas fa-cogs"></i><span>Post</span>
+            </a>
+            <a href="feedback.html" class="btn" target="content">
+                <i class="fas fa-table"></i><span>Feedback</span>
+            </a>
+        </div>
+    </div>
+    <!--mobile navigation bar end-->
+    <!--sidebar start-->
+    <div class="sidebar" id="btn_script1">
+        <div class="profile_info">
+            <img src="1.png" class="profile_image" alt="">
+            <h4 id="name" >hi, < name ></Jessica></h4>
+        </div>
+        <a href="home.html" class="btn active" target="content">
+            <i class="fas fa-desktop"></i><span>Home</span>
+        </a>
+        <a href="post.html" class="btn" target="content">
+            <i class="fas fa-cogs"></i><span>Post</span>
+        </a>
+        <a href="feedback.html" class="btn" target="content">
+            <i class="fas fa-table"></i><span>Feedback</span>
+        </a>
+    </div>
+    <!--sidebar end-->
+
+    <iframe class="content" src="home.html" name="content"></iframe>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+    <script src="..\backend\login_registration\firebase.js"></script>
+    <script src="..\backend\login_registration\welcome.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.nav_btn').click(function () {
+                $('.mobile_nav_items').toggleClass('activate');
+            });
+        });
+    </script>
+    <script>
+        var header1 = document.getElementById("btn_script1");
+        var btns1 = header1.getElementsByClassName("btn");
+        for (var i = 0; i < btns1.length; i++) {
+            btns1[i].addEventListener("click", function() {
+                var current1 = document.getElementsByClassName("active");
+                current1[2].className = "btn";
+                this.className += " active";
+            });
+        }
+
+        var header2 = document.getElementById("btn_script2");
+        var btns2 = header2.getElementsByClassName("btn");
+        for (var j = 0; j < btns2.length; j++) {
+            btns2[j].addEventListener("click", function() {
+                var current2 = document.getElementsByClassName("active");
+                current2[0].className = "btn";
+                current2[1].className = "btn";
+                current2[2].className = "btn";
+                this.className += " active";
+            });
+        }
+    </script>
+    
+
+</body>
+
+</html>

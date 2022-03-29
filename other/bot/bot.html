@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bot.css">
+    <title></title>
+   
+</head>
+
+<body>
+
+    <input type="checkbox" id="check"> <label class="chat-btn" for="check"> <i class="fa fa-commenting-o comment"></i>
+        <i class="fa fa-close close"></i> </label>
+    <div class="wrapper">
+        <div class="header">
+            <h6>Quick Responce</h6>
+        </div>
+        <div class="content">
+            <span>Please fill out the form to start chat!</span>
+            <form action=""  class="instant">
+                <input class="name" type="text" class="form-control name" placeholder="Name" required>
+                <input class="email" type="text" class="form-control email" placeholder="Email" required>
+                <textarea class="message" class="form-control message" placeholder="Your Text Message" required></textarea>
+                <span><small>Your query will solved within 24hrs</small></span>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="bot_backend.js"></script>
+
+</body>
+</html>

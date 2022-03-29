@@ -1,0 +1,216 @@
+.main_containor{
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 15%;
+    padding: 100px;
+    padding-top: 50px;
+    box-shadow: 2px 1px 21px -9px rgb(0, 0, 0, 0.38);
+}
+.main_containor hr{
+    margin-bottom: 40px;
+}
+.donation_amount{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.amount{
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    padding: 15px;
+    padding-top: 12px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+.input_amount{
+    width: 80%;
+    margin-top: -10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 18px;
+}
+.input_amount::placeholder{
+    color: black;
+}
+.amount:hover{
+    background-color: lightgray;
+}   
+.amount:hover .input_amount{
+    background-color: lightgray;
+}   
+.selected_amount{
+    border: 1px solid #0d6efd;
+    background-color: #0d6efd;
+    color: white;
+}
+.selected_amount:hover{
+    border: 1px solid rgb(44, 132, 219);
+    background-color: rgb(44, 132, 219);
+    color: white;
+}
+.designation_containor{
+    margin-top: 70px;
+}
+.designation{
+    margin-bottom: 30px;
+}
+.designation label{
+    font-size: 20px;
+}
+.designation select{
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.billing_address{
+    margin-top: 70px;
+}
+label{
+    font-size: 20px;
+}
+table{
+    margin-top: 30px;
+    text-align: left;
+}
+table input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0.5px solid black; 
+}
+table input[name="name"]{
+    width: 30%;
+    margin-right: 2px;
+}
+table textarea{
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.payment button{
+    width: 150px;
+    height: 50px;
+    margin: 10px;   
+    padding: 20px;
+    padding-top: 10px;
+    font-size: 1.15em;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+.payment button:hover{
+    background-color: lightgray;
+}
+.payment .selected_button{
+    border: 1px solid #0d6efd;
+    background-color: #0d6efd;
+    color: white;
+}
+.payment .selected_button:hover{
+    border: 1px solid rgb(44, 132, 219);
+    background-color: rgb(44, 132, 219);
+    color: white;
+}
+.payment_details{
+    margin-top: 100px;
+}
+.payment select{
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.food_details select{
+    padding: 10px;
+    border-radius: 10px;
+}
+#debit_details{
+    display: none;
+}
+.recurring{
+    margin-top: 50px;
+}
+.gift{
+    margin: 30px;
+    display: none;
+}
+.gift span{
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.gift select{
+    padding: 10px;
+    border-radius: 10px;
+}
+#recurring_gift:checked ~ .gift{
+    display: block;
+}
+.submit_donation{
+    margin-top: 50px;
+    text-align: center;
+}
+.submit_donation textarea{
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.submit_donation button{
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    padding: 20px;
+    padding-top: 12px;
+    border: 1px solid #0d6efd;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+.submit_donation button:hover{
+    background-color: #198754;
+}
+@media only screen and (max-width: 990px) {
+    .main_containor{
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 5%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .main_containor{
+        padding-top: 50px;
+    }
+    .address table tr{
+        display: flex;
+        flex-direction: column;
+    }
+    .food_details table tr{
+        display: flex;
+        flex-direction: column;
+    }
+    .payment_label{
+        margin-right: 50px;
+    }
+    .payment button{
+        width: 120px;
+        height: 40px;
+        margin: 20px;
+        margin-right: 0px;
+        padding: 8px;
+        font-size: 1em;
+    }
+    .gift{
+        margin-left: 10px;
+    }
+}

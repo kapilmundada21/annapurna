@@ -1,0 +1,183 @@
+.about_container{
+    padding: 5%;
+    /* padding-top: 150px; */
+}
+.box{
+    padding-top: 50px;
+    background: url("../images/aboutus_background.jpg");
+    background-size: cover;
+    color: white;
+    text-align:center;
+    z-index:1;
+}
+.box_text{
+    padding: 100px 0;
+}
+.box p{
+    font-size:18px;
+}
+.red{
+    color:orangered;
+}
+.redline-address{
+    border:none;
+    height:3px;
+    background-color:orangered;
+    width:140px;
+    margin-bottom:20px;
+}
+.about{
+    display: flex;
+    justify-content:space-evenly;
+}
+.about .text{
+    width: 60%;
+    margin-top: 30px;
+}
+.mission{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.mission .right{
+    display: flex;
+    padding: 50px;
+} 
+.mission h1{
+    color:#1EADFF;
+}
+.mission hr{
+    width:35%;
+    border-top:2px solid #6c757d;
+    border-bottom:none;
+}
+.mission .text{
+    margin-left: 10%;
+    margin-top: 30px;
+}
+.our_team h1{
+   color:#1EADFF;
+}
+.our_team hr{
+    width:20%;
+    border-top:2px solid #6c757d;
+    border-bottom:none;
+}
+.team_containor{
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background: #dfa436;
+}
+ 
+.team_card{
+    display: inline-block;
+    flex-wrap: wrap;
+    width: 230px;
+    margin: 20px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px 15px 30px;
+    background: #fff;
+
+}
+.team_card .pic{
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 25px;
+    width: 90%;
+    height: 100%;
+    transition: all 0.5s ease 0s;
+}
+.team_card:hover .pic{
+    background: #17bebb;
+    border-radius: 50%;
+}
+.pic img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+.team_card .title{
+    font-weight: 600;
+    color: #2e282a;
+    text-transform: uppercase;
+    display: block;
+    font-size: 20px;
+    margin: 0 0 7px 0;
+}
+.team_card .post{
+    color: #17bebb;
+    text-transform: capitalize;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.team_card .social{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.team_card .social li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.team_card .social li a{
+    border-radius: 50%;
+    font-size: 15px;
+    color: #17bebb;
+    border: 1px solid #17bebb;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    transition: all 0.5s ease 0s;
+}
+.team_card:hover .social li a{
+    background: #17bebb;
+    color: #fff;
+}
+.team_card:hover .pic{
+    background: #17bebb;
+    border-radius: 50%;
+}
+.team_card:hover .social li a{
+    background: #17bebb;
+    color: #fff;
+}
+
+@media only screen and (max-width: 990px) {
+    .mission .right{
+        display: block;
+    }
+    .mission .text{
+        margin-top: 50px;
+    }
+    .about{
+        display: block;
+    }
+    .about .text{
+        width: 80%;
+    }
+    .about img{
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    .our_team hr{
+        width:25%;
+    }
+}
+@media only screen and (max-width: 400px){
+    .about_container{
+        padding: 0px;
+        padding-top: 150px;
+    }
+    .about_container h1{
+        font-size:35px;
+    }
+    .about .text{
+        margin-top: -60px;
+    }
+    .mission hr{
+        width:60%;
+    }
+}
