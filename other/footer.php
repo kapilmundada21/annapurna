@@ -34,7 +34,7 @@
           <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
             <h3 class="footer-heading mb-4">Quick Links</h3>
             <ul class="list-unstyled">
-              <li><a class="nav-link active" href="index.php">Home</a></li>
+              <li><a class="nav-link active" href="index.html">Home</a></li>
               <li><a class="nav-link active" href="supportus.php">Support</a></li>
               <li><a class="nav-link active" href="https://pmny.in/qrgpx69I5tQw">Donate</a></li>
               <li><a class="nav-link active" href="aboutus.php">About Us</a></li>
