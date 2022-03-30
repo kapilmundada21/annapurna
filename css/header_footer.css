@@ -52,7 +52,11 @@ body{
       margin-top: 20px;
       margin-bottom: 20px;
     }
-
+    .site-footer {
+      padding: 5%;
+      padding-top: 50px;
+      text-align: center;
+    }
     .dropdown {
       margin-top: 20px;
     }
