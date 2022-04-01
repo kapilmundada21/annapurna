@@ -7,7 +7,7 @@ body{
   }
 
   .navbar-brand span {
-    margin-left: 20px;
+    margin-left: 4%;
     margin-right: 50px;
   }
 
@@ -48,6 +48,9 @@ body{
   }
 
   @media only screen and (max-width: 400px) {
+    .navbar-brand span {
+      margin-right: 0%;
+    }
     .navbtn {
       margin-top: 20px;
       margin-bottom: 20px;
