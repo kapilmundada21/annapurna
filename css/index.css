@@ -167,9 +167,12 @@ body{
     .block_content_left{
         padding: 50px;
     }
+    .block_content_right{
+        padding: 50px;
+    }
 }
 @media only screen and (max-width: 400px){
     .content1 .content1img{
-        margin-left: -15%;
+        margin-left: -6%;
     }
 }
