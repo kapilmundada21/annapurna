@@ -163,16 +163,16 @@ body{
     .content1{
         margin-top: 20px;
         padding: 30px;    
-    }   
+    }  
+    .content2 .right{
+        padding: 20px;
+        margin-bottom: 10px;
+        border: 0.5px solid black;
+    } 
     .block_content_left{
         padding: 50px;
     }
     .block_content_right{
         padding: 50px;
-    }
-}
-@media only screen and (max-width: 400px){
-    .content1 .content1img{
-        margin-left: -0%;
     }
 }
