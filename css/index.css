@@ -162,7 +162,7 @@ body{
     }
     .content1{
         margin-top: 20px;
-        padding: 50px;    
+        padding: 30px;    
     }   
     .block_content_left{
         padding: 50px;
@@ -173,6 +173,6 @@ body{
 }
 @media only screen and (max-width: 400px){
     .content1 .content1img{
-        margin-left: -6%;
+        margin-left: -0%;
     }
 }
