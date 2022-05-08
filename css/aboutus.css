@@ -180,4 +180,7 @@
     .mission hr{
         width:60%;
     }
+    .mission .right{
+        padding: 20px;
+    }
 }
